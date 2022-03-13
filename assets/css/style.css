@@ -1,0 +1,379 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&display=swap");
+@keyframes slide-in {
+  from {
+    left: -80%;
+  }
+  to {
+    left: 0%;
+  }
+}
+@keyframes slide-out {
+  from {
+    left: 0%;
+  }
+  to {
+    left: -80%;
+  }
+}
+@keyframes slide-in-2 {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 0%;
+  }
+}
+@keyframes slide-out-2 {
+  from {
+    right: 0%;
+  }
+  to {
+    right: -100%;
+  }
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+    visibility: visible;
+  }
+  to {
+    opacity: 0.75;
+    visibility: visible;
+  }
+}
+@keyframes disappear {
+  from {
+    opacity: 0.75;
+    visibility: visible;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes appearOpacity1 {
+  from {
+    opacity: 0;
+    visibility: visible;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@keyframes disappearOpacity0 {
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes carrosel1Img1Next {
+  from {
+    background-image: url(../images/image-product-1.jpg);
+    right: 0;
+  }
+  to {
+    right: 100%;
+  }
+}
+@keyframes carrosel1Img2Next {
+  from {
+    background-image: url(../images/image-product-2.jpg);
+    right: -100%;
+  }
+  to {
+    right: 0%;
+  }
+}
+@keyframes carrosel2Img1Next {
+  from {
+    background-image: url(../images/image-product-2.jpg);
+    right: 0;
+  }
+  to {
+    background-image: url(../images/image-product-2.jpg);
+    right: 100%;
+  }
+}
+@keyframes carrosel2Img2Next {
+  from {
+    background-image: url(../images/image-product-3.jpg);
+    right: -100%;
+  }
+  to {
+    background-image: url(../images/image-product-3.jpg);
+    right: 0%;
+  }
+}
+@keyframes carrosel3Img1Next {
+  from {
+    background-image: url(../images/image-product-3.jpg);
+    right: 0;
+  }
+  to {
+    background-image: url(../images/image-product-3.jpg);
+    right: 100%;
+  }
+}
+@keyframes carrosel3Img2Next {
+  from {
+    background-image: url(../images/image-product-4.jpg);
+    right: -100%;
+  }
+  to {
+    background-image: url(../images/image-product-4.jpg);
+    right: 0%;
+  }
+}
+@keyframes carrosel1Img1Previous {
+  from {
+    background-image: url(../images/image-product-2.jpg);
+    right: 0;
+  }
+  to {
+    background-image: url(../images/image-product-2.jpg);
+    right: -100%;
+  }
+}
+@keyframes carrosel1Img2Previous {
+  from {
+    background-image: url(../images/image-product-1.jpg);
+    right: 100%;
+  }
+  to {
+    background-image: url(../images/image-product-1.jpg);
+    right: 0%;
+  }
+}
+@keyframes carrosel2Img1Previous {
+  from {
+    background-image: url(../images/image-product-3.jpg);
+    right: 0;
+  }
+  to {
+    background-image: url(../images/image-product-3.jpg);
+    right: -100%;
+  }
+}
+@keyframes carrosel2Img2Previous {
+  from {
+    background-image: url(../images/image-product-2.jpg);
+    right: 100%;
+  }
+  to {
+    background-image: url(../images/image-product-2.jpg);
+    right: 0%;
+  }
+}
+@keyframes carrosel3Img1Previous {
+  from {
+    background-image: url(../images/image-product-4.jpg);
+    right: 0;
+  }
+  to {
+    background-image: url(../images/image-product-4.jpg);
+    right: -100%;
+  }
+}
+@keyframes carrosel3Img2Previous {
+  from {
+    background-image: url(../images/image-product-3.jpg);
+    right: 100%;
+  }
+  to {
+    background-image: url(../images/image-product-3.jpg);
+    right: 0%;
+  }
+}
+.conteudo {
+  padding: 10%;
+  background-color: #ecf2f8;
+}
+@media only screen and (max-width: 960px) {
+  .conteudo {
+    padding: 20% 5%;
+  }
+}
+.conteudo__conteiner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "daniel daniel jonathan kira" "jeanette patrick patrick kira";
+  gap: 2rem;
+}
+@media only screen and (max-width: 960px) {
+  .conteudo__conteiner {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.7fr 0.7fr 0.75fr 0.75fr 0.62fr 0.62fr 0.75fr 0.75fr;
+    grid-template-areas: "daniel" "daniel" "jonathan" "jeanette" "patrick" "patrick" "kira" "kira";
+  }
+}
+.conteudo__artigo {
+  padding: 2rem;
+  border-radius: 12px;
+}
+.conteudo__artigo:first-child {
+  grid-area: daniel;
+  background-image: url(../images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position-x: 80%;
+  background-position-y: 0;
+  background-color: #7541c8;
+}
+.conteudo__artigo:nth-child(2) {
+  grid-area: jonathan;
+  background-color: #48556a;
+}
+.conteudo__artigo:nth-child(3) {
+  grid-area: jeanette;
+  background-color: white;
+}
+.conteudo__artigo:nth-child(4) {
+  grid-area: patrick;
+  background-color: #19212e;
+}
+.conteudo__artigo:last-child {
+  grid-area: kira;
+  background-color: white;
+}
+.conteudo__conteiner-img {
+  display: flex;
+  align-items: center;
+}
+.conteudo__img1 {
+  border-radius: 50%;
+  margin-right: 1rem;
+  border: white solid 2px;
+}
+.conteudo__img2 {
+  border-radius: 50%;
+  margin-right: 1rem;
+  border: #48556a solid 2px;
+}
+.conteudo__img3 {
+  border-radius: 50%;
+  margin-right: 1rem;
+  border: white solid 2px;
+}
+.conteudo__img4 {
+  border-radius: 50%;
+  margin-right: 1rem;
+  border: #7541c8 solid 2px;
+}
+.conteudo__img5 {
+  border-radius: 50%;
+  margin-right: 1rem;
+  border: white solid 2px;
+}
+.conteudo__nome1 {
+  margin-bottom: 0.5rem;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 600;
+  color: white;
+}
+.conteudo__nome2 {
+  margin-bottom: 0.5rem;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 600;
+  color: white;
+}
+.conteudo__nome3 {
+  margin-bottom: 0.5rem;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 600;
+}
+.conteudo__nome4 {
+  margin-bottom: 0.5rem;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 600;
+  color: white;
+}
+.conteudo__nome5 {
+  margin-bottom: 0.5rem;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 600;
+}
+.conteudo__verified {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  color: #ecf2f8;
+}
+.conteudo__verified3 {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  color: #48556a;
+}
+.conteudo__verified5 {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  color: #48556a;
+}
+.conteudo__titulo1 {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 1.35rem;
+  color: white;
+}
+.conteudo__titulo2 {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 1.35rem;
+  color: white;
+}
+.conteudo__titulo3 {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 1.35rem;
+  color: #48556a;
+}
+.conteudo__titulo4 {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 1.35rem;
+  color: white;
+}
+.conteudo__titulo5 {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 1.35rem;
+}
+.conteudo__texto {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  line-height: 1.2rem;
+  color: #ecf2f8;
+}
+.conteudo__texto3 {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  line-height: 1.2rem;
+  color: #48556a;
+}
+.conteudo__texto5 {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  line-height: 1.2rem;
+  color: #19212e;
+  color: #48556a;
+}
+
+body {
+  font-size: 13px;
+}
+
+/*# sourceMappingURL=style.css.map */
