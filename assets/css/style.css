@@ -246,29 +246,69 @@
   align-items: center;
 }
 .conteudo__img1 {
+  height: 35px;
+  width: 35px;
   border-radius: 50%;
   margin-right: 1rem;
   border: white solid 2px;
 }
+@media only screen and (max-width: 960px) {
+  .conteudo__img1 {
+    height: 30px;
+    width: 30px;
+  }
+}
 .conteudo__img2 {
+  height: 35px;
+  width: 35px;
   border-radius: 50%;
   margin-right: 1rem;
   border: #48556a solid 2px;
 }
+@media only screen and (max-width: 960px) {
+  .conteudo__img2 {
+    height: 30px;
+    width: 30px;
+  }
+}
 .conteudo__img3 {
+  height: 35px;
+  width: 35px;
   border-radius: 50%;
   margin-right: 1rem;
   border: white solid 2px;
 }
+@media only screen and (max-width: 960px) {
+  .conteudo__img3 {
+    height: 30px;
+    width: 30px;
+  }
+}
 .conteudo__img4 {
+  height: 35px;
+  width: 35px;
   border-radius: 50%;
   margin-right: 1rem;
   border: #7541c8 solid 2px;
 }
+@media only screen and (max-width: 960px) {
+  .conteudo__img4 {
+    height: 30px;
+    width: 30px;
+  }
+}
 .conteudo__img5 {
+  height: 35px;
+  width: 35px;
   border-radius: 50%;
   margin-right: 1rem;
   border: white solid 2px;
+}
+@media only screen and (max-width: 960px) {
+  .conteudo__img5 {
+    height: 30px;
+    width: 30px;
+  }
 }
 .conteudo__nome1 {
   margin-bottom: 0.5rem;
@@ -316,41 +356,46 @@
 .conteudo__titulo1 {
   font-family: "Barlow Semi Condensed", sans-serif;
   font-weight: 600;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  font-size: 1.35rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+  line-height: 1.6rem;
   color: white;
 }
 .conteudo__titulo2 {
   font-family: "Barlow Semi Condensed", sans-serif;
   font-weight: 600;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  font-size: 1.35rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+  line-height: 1.6rem;
   color: white;
 }
 .conteudo__titulo3 {
   font-family: "Barlow Semi Condensed", sans-serif;
   font-weight: 600;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  font-size: 1.35rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+  line-height: 1.6rem;
   color: #48556a;
 }
 .conteudo__titulo4 {
   font-family: "Barlow Semi Condensed", sans-serif;
   font-weight: 600;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  font-size: 1.35rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+  line-height: 1.6rem;
   color: white;
 }
 .conteudo__titulo5 {
   font-family: "Barlow Semi Condensed", sans-serif;
   font-weight: 600;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  font-size: 1.35rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+  line-height: 1.6rem;
 }
 .conteudo__texto {
   font-family: "Barlow Semi Condensed", sans-serif;
